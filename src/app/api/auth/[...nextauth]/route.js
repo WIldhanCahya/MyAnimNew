@@ -6,14 +6,14 @@ export const authOption = {
     providers: [
         githubAuth({
             clientId: process.env.GITHUB_ID,
-            clientSecret: process.env.GITHUB_SEC
+            clientSecret: process.env.GITHUB_SECRET
         }),
         googleAuth({
             clientId: process.env.GOOGLE_ID,
-            clientSecret: process.env.GOOGLE_SEC
+            clientSecret: process.env.GOOGLE_SECRET
         })
     ],
-    secret: process.env.NEXTAUTH_SEC
+    secret: process.env.NEXTAUTH_SECRET
 }
 
 const handler = NextAuth(authOption)
