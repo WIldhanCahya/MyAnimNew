@@ -18,14 +18,6 @@ const Page = async({ params }) => {
             <Image src={user.image} alt={user.name} width={350} height={350} className="border border-white rounded-full"/>
             <h5 className="mt-5 text-3xl">WELCOME <span className="text-[#FFD369]">{user.name}</span></h5>
         </div>
-        <div>
-            <Header title={"Anime Favorit"}/>
-            {/* <AnimeList api={}/> */}
-        </div>
-        <div>
-            <Header title={"Manga Favorit"}/>
-            {/* <MangaList api={}/> */}
-        </div>
             </>
             : redirect("/")
         }
