@@ -7,9 +7,6 @@ const Page = async ({ params }) => {
 
   const anime = await getAnimeResponse(`anime/${id}`);
 
-  const AddFav = () => {
-    animeFav.push(anime)
-  }
 
   return (
     <>
